@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <title>超級紅娘</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <div class="container" style="border-bottom:5px solid #ee6b66;">
+
+            <a class="navbar-brand" href="#">
+                <img src="../Project/img/red.svg" width="250" height="125" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!-- <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">首頁
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            美味餐單
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">果口味</a>
+                            <a class="dropdown-item" href="#">沒肉不舒服</a>
+                            <a class="dropdown-item" href="#">調味醬</a>
+                        </div>
+                    </li>
+                </ul> -->
+
+                <form class="form-inline my-2 my-md-0 ml-auto">
+                    <a href="#" class="btn btn-outline-secondary mr-3 myhover" data-toggle="modal" data-target="#loginModal">登入</a>
+                    <a href="#" class="btn btn-outline-secondary myhover" data-toggle="modal" data-target="#registerModal">註冊</a>
+                </form>
+
+            </div>
+
+
+        </div>
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item header-carousel-item bg-cover active" style="background-image:url(https://images.unsplash.com/photo-1514446750685-c27ac87a4403?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=11d70cec9ced38e4d0e9282eeda5dc91&auto=format&fit=crop&w=2550&q=80)">
+                <div class="carousel-caption d-none d-md-block px-2">
+                    <h5>標題一</h5>
+                    <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla consequatur laborum nemo ea deleniti,
+                        quia alias quibusdam odio eligendi voluptatibus id architecto earum sit vel? Rem vel ipsa vitae temporibus.</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover" style="background-image:url(https://images.unsplash.com/photo-1509994320249-7c2fc6db37b1?ixlib=rb-0.3.5&s=4c5307e4988900e9bbb6dddc512affad&auto=format&fit=crop&w=2472&q=80)">
+                <div class="carousel-caption d-none d-md-block px-2">
+                    <h5>標題二</h5>
+                    <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla consequatur laborum nemo ea deleniti,
+                        quia alias quibusdam odio eligendi voluptatibus id architecto earum sit vel? Rem vel ipsa vitae temporibus.</p>
+                </div>
+            </div>
+            <div class="carousel-item header-carousel-item bg-cover" style="background-image:url(https://images.unsplash.com/photo-1510276113764-7ac28415a9ec?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c694c9356ac600de69e18672af9dc161&auto=format&fit=crop&w=1500&q=80)">
+                <div class="carousel-caption d-none d-md-block px-2">
+                    <h5>標題三</h5>
+                    <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla consequatur laborum nemo ea deleniti,
+                        quia alias quibusdam odio eligendi voluptatibus id architecto earum sit vel? Rem vel ipsa vitae temporibus.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container mt-3">
+        <section style="border-bottom:3px solid #e0e0e0;">
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <h1>超級紅娘</h1>
+                    <p>有什麼比紅娘還要厲害？</p>
+                    <p>那就是超級紅娘啦！有別於傳統的聯誼、相親、交友服務，我們使用最新的科技 最有效的制度來幫助大家脫單！</p>
+                </div>
+                <div class="col-md-6">
+
+                    <img src="https://images.unsplash.com/photo-1505765052322-75804bb2e5f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=07baf6eecb56415a1f220c7a1bad2544&auto=format&fit=crop&w=1500&q=80"
+                        alt="" class="img-thumbnail">
+                </div>
+            </div>
+        </section>
+
+        <section style="border-bottom:3px solid #e0e0e0;">
+            <div class="major mt-3">
+                <h2>六大訴求</h2>
+
+            </div>
+
+            <!-- 六大訴求第一層 -->
+            <div class="row my-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- <div class="diamond"> -->
+                            <i class="fas fa-user-friends fa-3x mainColor"></i>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-md-10">
+                            <div class="article">
+                                <h3>是交友網站 也可以相親聯誼</h3>
+                                <p>我們建構了一個免費的平台 供大家在這個平台免費尋找對象</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- <div class="diamond"> -->
+                            <i class="fas fa-money-bill-alt fa-3x mainColor"></i>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-md-10">
+                            <div class="article">
+                                <h3>免費 擁有其它品牌付費功能</h3>
+                                <p>我們有信心 我們的免費功能 與同業的付費功能相同</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- 六大訴求第二層 -->
+            <div class="row my-3">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- <div class="diamond"> -->
+                            <i class="fas fa-hand-holding-heart fa-3x mainColor"></i>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-md-10">
+                            <div class="article">
+                                <h3>帶領你 直到牽線</h3>
+                                <p>只要你加入我們的平台 我們就一直帶領你 直到線牽</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- <div class="diamond"> -->
+                            <i class="fas fa-concierge-bell fa-3x mainColor"></i>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-md-10">
+                            <div class="article">
+                                <h3>無處不在</h3>
+                                <p>facebook線上固定時間回覆問題 Line@固定時段回覆使用者訊息</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- 六大訴求第三層 -->
+            <div class="row my-3">
+                <div class="col-md-6 ">
+                    <div class="row ">
+                        <div class="col-md-2">
+                            <!-- <div class="diamond"> -->
+                            <i class="fas fa-info-circle fa-3x mainColor"></i>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-md-10">
+                            <div class="article">
+                                <h3>解決資訊不對稱</h3>
+                                <p>我們提供人海資料庫給你搜尋 喜歡就發出邀請 自己的伴自己找</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- <div class="diamond"> -->
+                            <i class="fas fa-bolt fa-3x mainColor"></i>
+                            <!-- </div> -->
+                        </div>
+                        <div class="col-md-10">
+                            <div class="article">
+                                <h3>業界首創 也是世界首創</h3>
+                                <p>線上 加 線下 我們都提供最高等級的安全保護</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <!-- TimeLine -->
+        <section>
+            <div class="major mt-3">
+                <h2 class="mt-3">通往結婚之路 五步驟</h3>
+            </div>
+
+            <div class="timeline-section">
+
+                <div class="row timeline-pointer my-3">
+                    <div class="col-sm-6">
+                        <h3>步驟一</h3>
+                        <p>你只要註冊 登錄我們的網站</p>
+                        <i class="fas fa-sign-in-alt fa-5x"></i>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box"></div>
+                    </div>
+
+
+                </div>
+                <div class="row my-3 timeline-pointer flex-sm-row-reverse">
+                    <div class="col-sm-6">
+                        <h3>步驟二</h3>
+                        <p>開始搜尋準對像 有喜歡的 就不要客氣發出邀請嘍</p>
+                        <i class="fas fa-search fa-5x text-center"></i>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box"></div>
+                    </div>
+
+
+                </div>
+                <div class="row timeline-pointer my-3 ">
+                    <div class="col-sm-6">
+                        <h3>步驟三</h3>
+                        <p>若對方拒絕你的邀請 別灰心 再回到步驟二吧 若對方答應你的邀請 你們就可以開始線上聊天啦！</p>
+                        <i class="far fa-comments fa-5x"></i>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box"></div>
+                    </div>
+
+
+                </div>
+                <div class="row timeline-pointer my-3 flex-sm-row-reverse">
+                    <div class="col-sm-6">
+                        <h3>步驟四</h3>
+                        <p>只有聊天是不夠的 我們準備了許多的線下活動 讓你們在絕對安心的環境之下 大膽的約對方出來吧！</p>
+                        <i class="far fa-calendar-alt fa-5x"></i>
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box"></div>
+                    </div>
+
+
+                </div>
+                <div class="row timeline-pointer my-3">
+                    <div class="col-sm-6">
+                        <h3>步驟五</h3>
+                        <p>這時候 你也許已經約出好幾個對象了 別客氣 挑一個最適合的交往 結婚吧！若沒有 回到步驟二再重來吧！</p>
+
+
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="box"></div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+    <div class="footer bg-light">
+        <ul class="d-flex justify-content-center align-items-center">
+            <li>
+                <a href="#">使用條款</a>
+            </li>
+            <li>
+                <a href="#">隱私權政策</a>
+            </li>
+            <li>
+                <a href="#">聯絡我們</a>
+            </li>
+
+        </ul>
+        <p style="text-align: center; ">Copyright&#9400 2018 超級紅娘AllRight Reserved.</p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
+        crossorigin="anonymous "></script>
+    <script src="JS/ui-control.js"></script>
+
+</body>
+
+</html>
