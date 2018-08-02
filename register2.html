@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <title>超級紅娘</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+        <div class="container" style="border-bottom:5px solid #ee6b66;">
+
+            <a class="navbar-brand" href="landingPage.html">
+                <img src="img/red.svg" width="250" height="125" alt="">
+            </a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="top-line"></div>
+                <div class="progress">
+                    <div class="in done"></div>
+                    <div class="in"></div>
+                    <div class=""></div>
+                    <div class=""></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <center>
+                    <h1>基本資料</h1>
+                    <!-- <div>Tell us who you are!</div> -->
+                </center>
+            </div>
+        </div>
+        <form action="register3.html" method="POST" enctype="application/x-www-form-urlencoded">
+            <div class="row mt-3">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>暱稱
+                        </label>
+                        <input type="text" name="NickName" class="form-control" placeholder="暱稱">
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>手機號碼</label>
+                        <input type="text" name="Phone" data-valid="1" class="form-control" placeholder="0912345678" data-toggle="tooltip" title="NUMBERS ONLY">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label>Birth Date
+                        <span>(optional)</span>
+                    </label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="form-group">
+                        <select class="form-control" name="BirthYear" data-from="1900" data-to="2018" required>
+                            <option value="" hidden>YYYY</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <select class="form-control" name="BirthMonth" data-from="1" data-to="12" required>
+                            <option value="" hidden>MM</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="form-group">
+                        <select class="form-control" name="BirthDate" data-from="1" data-to="31" required>
+                            <option value="" hidden>DD</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label>Address</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-group">
+                        <select class="form-control city" name="City" required>
+                            <option value="" hidden>City</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <select class="form-control region" name="Region" required>
+                            <option value="" hidden>Dist</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <input type="text" name="Address" data-valid="1" class="form-control" placeholder="detail address" data-toggle="tooltip"
+                            title="REQUIRED FILED">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-md-3">
+                    <div class="form-group">
+                        <label>身高
+                        </label>
+                        <select class="form-control" name="" data-from="100" data-to="230" required>
+                            <option value="" hidden>Height</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="form-group">
+                        <label>學歷
+                        </label>
+                        <select class="form-control" name="" data-from="0" data-to="6" required>
+                            <option value="" hidden>degree</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="form-group">
+                        <label>性別
+                        </label>
+                        <select class="form-control" name="" data-from="0" data-to="1" required>
+                            <option value="" hidden>gender</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <div class="form-group">
+                        <label>想找？
+                        </label>
+                        <select class="form-control" name="" data-from="0" data-to="1" required>
+                            <option value="" hidden>wanted</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                有過婚史？
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                已有小孩？
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                抽煙？
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                喝酒？
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-4">
+
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                養寵物？
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">自我介紹(500字內)</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <div class="form-group">
+
+                        <button type="submit" class="btn btn-primary form-control warn" formnovalidate>下一步</button>
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+
+    <div class="footer bg-light">
+        <ul class="d-flex justify-content-center align-items-center">
+            <li>
+                <a href="#">使用條款</a>
+            </li>
+            <li>
+                <a href="#">隱私權政策</a>
+            </li>
+            <li>
+                <a href="#">聯絡我們</a>
+            </li>
+
+        </ul>
+        <p style="text-align: center; ">Copyright2018&#9400 超級紅娘AllRight Reserved.</p>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js " integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em "
+        crossorigin="anonymous "></script>
+    <script src="JS/ui-control.js"></script>
+
+</body>
+
+</html>
