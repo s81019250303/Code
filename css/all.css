@@ -196,8 +196,9 @@ p{
     margin-top: 16px;
     border: 2px solid #000000;
     border-radius: 8px;
-    /* width: 460px; */
+    width: 460px;
     height: 140px;
+    
 
   }
   
@@ -229,4 +230,14 @@ p{
 
   .list {
     align-items: flex-end;
+  }
+
+  .smile i {
+    padding-top: 16px;
+    width: 230px;
+    height: 230px;
+    font-size: 230px;
+    margin: 0 auto;
+    display: block;
+    color: #BEE1FF;
   }
